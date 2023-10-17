@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+  }
+.container{
+    display:flex ;
+    width: 100%;
+    font-family: sans-serif;
+    background-color:#19283f;
+ 
+} 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    padding-left: 20px;
+   
+
+    }
+/* .filter{
+    width: 19%;
+    display: inline-block;
+    position: relative;
+    left:10px;
+    border-right: 1px solid #ddd;  
+} */
+/* .filter span{
+    display: block;
+    top: 0px;
+    width: 80%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+} */
+.clothesDetails{
+    width: 20%;
+    margin: 10px 0px;
+    position:relative;
+    float: right;
+}
+.imageDetails{
+    /* background-color: #ddd; */
+    width: 90%;
+    height:400px;
+    position: relative;
+
+}
+.image{
+    width:100% ;
+    height:100% ;
+    position: absolute;
+    z-index: 2;
+border-radius: 10%;
+    /* top: 50px; */
+    /* margin-left: 20px; */
+    justify-content: center;
+   
+}
+.descriptionImage{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-family: sans-serif;
+}
+.descriptionImage span{
+    display: block  ;
+    margin-left: 10%;
+    padding-top: 10px;
+    width: 200px;
+}
+
+.topdeal{
+    color: #912704;
+}
+.deal{
+    
+    border-radius: 10%;
+    border: 1px solid #912704 ;
+    color: white;
+    padding: 2px;
+    background-color: #912704;
+
+}
+

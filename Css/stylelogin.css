@@ -1,0 +1,285 @@
+
+
+
+
+  #amazon{
+    width:315px;
+    height:33px;
+    font-size:14px;
+  
+    background: linear-gradient(#F7DEA1, #F0C14D);
+    border: 0.5px  #aaaaaa;
+    border-radius:5px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  #amazon:hover{
+  background: linear-gradient(#F5D68A, #EEBA36);
+  }
+  
+  
+  
+  body {
+      font-size: 13px;
+      line-height: 19px;
+      color: #111;
+      font-family: Arial,sans-serif;
+  }
+  
+  img{
+    margin: auto;
+    display: block;
+  }
+  
+  .warnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border: 2px rgb(198, 80, 80) solid;
+    border-radius: 8px;
+    margin-left: 40.3%;
+    margin-bottom: 1%;
+    
+    
+  }
+  img {
+    max-width: 100%;
+    
+  }
+  .warnImage {
+    flex-basis: 20%;
+  
+
+  }
+  .warnText {
+    font-size: 8px;
+    padding-left: 5px;
+  }
+  .warnText p{
+    font-size: 12px;
+  }
+
+  #signInBorder{
+    position: static;
+    margin: 0 auto;
+    border-color: #DDDDDD;
+    border: 0.5px solid #DDDDDD;
+    border-radius: 10px;
+    width: 340px;
+    padding-left: 25px;
+  }
+  
+  input{
+     /* border-left-color: #DDDDDD;
+    border-right-color: #DDDDDD; */
+     border-radius: 3px;
+    border-width: 0.2px;
+    /* border: 1px blue solid; */
+    
+    height: 35px;
+    width: 315px;
+    padding-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+  
+  }
+  
+  input:focus{
+    /* -webkit-box-shadow: 0px 0px 1.5px 1.5px rgba(231,118,0,0.9);
+    -moz-box-shadow: 0px 0px 1.5px 1.5px rgba(231,118,0,0.9);
+    box-shadow: 0px 0px 1.5px 1.5px rgba(231,118,0,0.9); */
+    -webkit-box-shadow: 0px 0px 1.5px 1.5px rgb(245, 245, 249);
+    -moz-box-shadow: 0px 0px 1.5px 1.5px rgba(160, 234, 250, 0.9);
+    box-shadow: 0px 0px 1.5px 1.5px rgba(122, 184, 239, 0.9);
+    outline:0;
+  }
+  
+  
+  #SignInTxt{
+    font-family: Arial, sans-serif;
+    font-size: 26.5px;
+  }
+  .terms{
+    font-size: smalle;
+  }
+  
+  h1{
+    font-size: 20px;
+    color: rgb(236, 75, 75);
+
+  }
+
+  h2 {
+     color: rgb(134, 134, 134);
+     font-weight: normal;
+     letter-spacing: 1px;
+     font-size: 11.5px;
+     width: 315px;
+     text-align: center;
+     border-top: 1px solid rgba(0, 0, 0, 0.1);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+     line-height: 0.1em;
+     margin: 10px 0 20px;
+     margin-bottom: 5px;
+  }
+  
+  h2 span {
+      background:#fff;
+      padding:0 10px;
+  }
+  
+  #createAccount{
+     /* margin-top: 60px; */
+    /* position: static; */
+    margin: auto;
+    width: 340px;
+    /* padding-left: 25px; */
+
+  }
+  .newToamazon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #newAccount{
+     /* background: linear-gradient(#f6f7f9, #e7e9ec);  */
+   
+   
+     background-color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: static;
+    margin: 0 auto;
+    width:315px;
+    height:33px;
+    font-size:14px;
+    border: 0.5px solid #d9e2f0;
+    border-radius:8px;
+  }
+  
+  #newAccount:hover{
+    background: linear-gradient(#f5f6f8, #d9dce1);
+  }
+  
+  /* Style the button that triggers the dropdown */
+.dropbtn {
+    /* background-color: #4CAF50; */
+    /* color: rgb(92, 92, 243); */
+
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: block;
+    width: 200px;
+    /* height: 150px; */
+    /* background-color: gray; */
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* z-index: -1; */
+  }
+  /* ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Show the dropdown menu on hover */
+  /* .dropdown:hover  .dropdown-content{
+    z-index: 9999;
+    display: block;
+    width: 200px;
+    height: 100px;
+  } */
+  /* .dropdown a:hover .dropdown-content{
+    display: block;
+  } */
+  /* Add a caret icon to indicate the dropdown */
+  .dropdown .dropbtn::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    margin-left: 10px;
+  }
+  
+  /* Rotate the caret icon when the dropdown is open */
+  /* .dropdown:hover .dropbtn::after {
+    transform: rotate(270deg);
+  }
+   */
+  #footer{
+    border: 0;
+     height: 0;
+     border-top: 1px solid rgba(0, 0, 0, 0.1);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+     margin-top: 30px;
+     /* background-color: #aaaaaa; */
+  }
+  
+  
+  
+  a:link{
+    font-size: 12px;
+    margin: 0 10px 0px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0066c0
+  }
+  a:hover{
+    text-decoration: underline;
+    color: orangergb(230, 161, 28);
+  }
+  
+  a:visited{
+    color: #0066c0;
+  }
+  
+   .links{
+    font-size: 10px;
+    text-align: center;
+    padding-left: 15px;
+  }
+  
+  #password{
+    margin-left: 125px;
+  }
+  #special{
+    font-size: 11px;
+  }
+  .MessageReuired{
+display: none; }
+#sumbitButton{
+  background-color: #ffd814;
+  border: 1px solid #dddddd;
+  border-radius: 10PX;
+  width: 95%;
+  height: 30px;
+  cursor: pointer;
+ 
+}
+#sumbitButton a{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #111;
+}
+#sumbitButton:hover a{
+  text-decoration: none;
+}

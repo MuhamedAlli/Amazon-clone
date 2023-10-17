@@ -1,0 +1,112 @@
+.Container_Form_Registeration{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
+
+.registration{
+    margin-top: 50px;
+    width: 30%; 
+    border: 2px solid #dddddd;
+    border-radius: 3%;
+    background-color: #ffffff;
+    position: relative;
+}
+.Image_logo {
+    position: absolute;
+    height: 100px;
+    z-index: 1;;
+}
+form{
+    display: inline-block;
+    margin-left:4%;
+    width:90%; 
+}
+
+p{
+    display: inline-block;
+    margin-left:4%;
+    max-width: 100%; 
+}
+ div div input{
+    display: block;
+    border: 1px solid #dddddd;
+
+    border-radius: 2%;
+    margin-top:2%;
+    margin-bottom:2%;
+    padding:2% 1%;
+    width:100%;
+ }
+ div div label{
+    font-size: large;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+ }
+ div div input:focus{
+    background-color: #F7FEFF;
+    border: 2px solid #888;
+    outline: none;
+    box-shadow:2px 2px 5px #aae8f5,-2px -2px 5px #aae8f5;
+}
+.MessageReuired{
+    visibility: hidden;
+    color: #ff0f0f;
+} 
+ .Underline_Form{
+    display: block;
+    height:2px;
+    background-color: #ddd;
+    box-shadow:10px 5px 12px #AAA;
+    width:40%;
+    opacity: 0.7;
+    margin:0 auto;
+ }
+ 
+ #passwordMessage{
+    display: block;
+    color:#888;
+    font-size: small;
+     top: 0px;
+    margin-bottom:2px;
+    visibility: visible;
+ }
+em{
+    color: #ff0f0f;
+
+}
+em.messageBlue{
+    color: #1470D3;
+    
+}
+
+#sumbitButton{
+    background-color: #ffd814;
+    border: 1px solid #dddddd;
+    border-radius: 10PX;
+    width: 102%;
+    cursor: pointer;
+}
+
+.condtionPrivcy{
+    text-decoration: none;
+}
+.condtionPrivcy:hover{
+    color: #DD9A00;
+    top:0px;
+}
+.foo{
+    /* position: relative; */
+    margin-top: 40px;
+    margin-left: 50px;
+}
+footer{
+    position: relative;
+    margin:0 auto;
+    width: 30%;
+    font-size: small;
+    margin-bottom:0px;
+    font-family: 'Lucida Sans', Arial, sans-serif
+}
+

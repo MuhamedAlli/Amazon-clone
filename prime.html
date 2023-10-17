@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="./Css/indexStyle.css" />
+    <link rel="stylesheet" href="./Css/primeStyle.css" />
+    <link rel="icon" type="image/x-icon" href="./Images/images/social.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+        <div class="header">
+            <div class="logo">
+               <a href="./index.html"><img src="./Images/images/logo.PNG"></a> 
+            </div>
+            <div class="location">
+                <img src="./Images/images/loc.PNG">
+            </div>
+            <div class="searchTextBox">
+                <select>
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Mobile electronics</option>
+
+                </select>
+                <input type="text" placeholder="Search amazon.eg" />
+                <div class="searchIcon">
+                    <img src="./Images/images/search.png" />
+                </div>
+            </div>
+            <div class="LanCount">
+                <img class="countryFlag" src="./Images/images/egypt.png" />
+                <span>EN</span>
+            </div>
+            <div class="signIn" id="mybtnlogin">
+                <h5>Hello, <span id="usernameLogin2"> sign in</span> <br>Accounts & Lists</h5>
+            </div>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+             
+                  <a href="./Login.html" id="UserLogin">sign in </a>
+                  <a href="./Registration.html">Register</a>
+                  <a href="./index.html" id="logOut" >logout</a>
+                  <span class="close" >&times;</span>
+                </div>
+              
+              </div>
+           
+            <div class="ordersHead">
+               <a href="./order.html" style="text-decoration: none;"><h5>Orders</h5></a> 
+            </div>
+            <div class="cartHead">
+                <a href="./cart.html" style="text-decoration: none;">
+                <img src="./Images/images/shopping-cart.png" />
+                <span id="numberOfProduct">Cart</span></a></a>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#" id="showMenu"><img src="./Images/images/main-menu.png"><span>All</span></a></li>
+                <li><a href="./index.html">Today's Deals</a></li>
+                <li><a href="./prime.html">Prime</a></li>
+                <li><a href="#">Mobile Phones</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Appliances</a></li>
+                <li><a href="./fashion.html">Fashion</a></li>
+                <li><a href="#">Video Games</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Toys & Games</a></li>
+                <li><a href="#">Grocery</a></li>
+
+            </ul>
+        </div>
+    
+    <!-- Content section -->
+    <div class="primeContent" id="primeContentDiv">
+        <div class="contentHeader">
+            <img src="./Images/images/amazon_prime_logo.png" />
+            <h1>Amazon Customer, we're giving you
+                a<span> 30 day free trial </span> of Amazon Prime</h1>
+            <p>Only EGP 29.00/month after trial. Cancel anytime. Terms and conditions apply</p>
+            <a href="#" >Explore other plans</a>
+            <button>Start your free 30-day trial</button>
+        </div>
+        <div class="takeAlookDiv">
+            <p>Take a look at what's included with Prime membership</p>
+        </div>
+    </div>
+    </div>
+    <div class="checkOut">
+        <h1>Check out what's included</h1>
+        <div class="advantagesSection">
+            <div class="gaming">
+                <img src="https://m.media-amazon.com/images/G/42/prime/marketing/slashPrime/Prime_Gaming_Illustration_2x._CB621713194_.jpg" />
+                <h1>Monthly gaming perks</h1>
+                <p>Free games, exclusive in-game content and a free Twitch channel subscription every month.</p>
+                <a href="#">Find out more</a>
+            </div>
+            <div class="gaming">
+                <img src="https://m.media-amazon.com/images/G/42/prime/marketing/slashPrime/Prime_Delivery_Illustration_2x._CB621712596_.jpg" />
+                <h1>Monthly gaming perks</h1>
+                <p>Free games, exclusive in-game content and a free Twitch channel subscription every month.</p>
+                <a href="#">Find out more</a>
+            </div><div class="gaming">
+                <img src="https://m.media-amazon.com/images/G/42/prime/marketing/slashPrime/Prime_Video_Illustration_2x._CB621713227_.jpg" />
+                <h1>Monthly gaming perks</h1>
+                <p>Free games, exclusive in-game content and a free Twitch channel subscription every month.</p>
+                <a href="#">Find out more</a>
+            </div>
+        </div>
+    </div>
+    <div class="chooseYourPlan">
+        <h1>Choose your plan</h1>
+        <p class="firstPar">Enjoy your 30 day free trial of Prime. After that, Prime is just EGP 29.00 per month. Cancel at any time.</p>
+        <div class="radioDiv1">
+            <div class="monthly" id="monthlyPlan">
+                <input type="radio" name="paln"/>
+                <p>Monthly Plan</p>
+                <h2>EGP 29.00</h2>
+                <p>per month after trial</p>
+            </div>
+            <div class="yearly" id="yearlyPlan">
+                <input type="radio" name="paln"/>
+                <p>Annual Plan</p>
+                <h2>EGP 249.00</h2>
+                <p>per year after trial</p>
+            </div>
+        </div>
+        <button>Try Prime free for 30 days</button>
+    </div>
+    <div class="MoreWaysToSubscribe">
+        <h3>More ways to subscribe:</h3>
+        <p><span class="OrangeCustomers"> Orange customers:</span> Call #266# from your Orange mobile number to 
+            subscribe to Prime and start your 30-day free trial along
+             with 1GB free on Amazon. Get Prime FREE with Orange Premier.
+             <br> <span>*Terms and conditions apply</span></p>
+        
+    </div>
+    <div class="Wondering">
+        <p class="Fpar">You may be wondering</p>
+        <!-- 1 -->
+        <div class="QuestionContainer1">
+            <div class="Q1" id="ques1">
+                <p>How do I sign up for a free trial? What happens after the free trial period?</p>
+                <i class="fa fa-plus" ></i>
+            </div>
+            <p class="specialPara" id="specialPara1" >To sign up for your free 30 day free trial, 
+                please click on “Try Prime free for 30 days” button above. 
+                Although you will not be charged for your 30 day trial of Prime,
+                 we do need a valid payment option on file in order to start 
+                 enjoying your trial and Prime's benefits.</p>
+                 <hr>
+        </div>
+        <!-- 2 -->
+        <div class="QuestionContainer1">
+            <div class="Q1" id="ques2">
+                <p>What benefits does Prime offer?</p>
+                <i class="fa fa-plus" ></i>
+            </div>
+            <p class="specialPara" id="specialPara2">Prime offers you the best of entertainment
+                 including movies, TV series, Amazon Originals, free PC games 
+                 and in game content with Prime Gaming, and fast and free delivery.
+            </p>
+                 <hr>
+        </div>
+        <!-- 3 -->
+        <div class="QuestionContainer1">
+            <div class="Q1" id="ques3">
+                <p>What methods can I use to sign up for Prime?</p>
+                <i class="fa fa-plus" ></i>
+            </div>
+            <p class="specialPara" id="specialPara3">To sign up, you must have a valid payment method on file. 
+                Payment methods accepted include international and domestic Visa and MasterCard 
+                credit and debit cards. Don't have a credit or debit card? Call #266# 
+                from your Orange mobile number to subscribe to Amazon Prime and start your free trial</p>
+                 <hr>
+        </div>
+             <!-- 4 -->
+        <div class="QuestionContainer1">
+            <div class="Q1" id="ques4">
+                <p>What if I am already a Prime member on a different Amazon website?</p>
+                <i class="fa fa-plus" ></i>
+            </div>
+            <p class="specialPara" id="specialPara4">If you live in Egypt and have Amazon Prime on another Amazon website,
+                 we encourage you to change your subscription to Amazon.eg. Enjoy a wide selection of 
+                 Egyptian brands with Prime delivery, customer service in Egypt and access to a wide range of 
+                movies and series on Prime Video. And all this for EGP 29.00/month or EGP 249.00/year!</p>
+                 <hr>
+        </div>
+        <!-- 5 -->
+        <div class="QuestionContainer1">
+            <div class="Q1" id="ques5">
+                <p>If I am not satisfied, how do I cancel? Will I get a refund?</p>
+                <i class="fa fa-plus" ></i>
+            </div>
+            <p class="specialPara" id="specialPara5">You can cancel your Prime membership at any time by clicking on
+                “Manage my membership” [https://www.amazon.eg/prime]. You will not receive a 
+                refund for the months during which your membership
+                 was active, but you will not be charged for your next scheduled billing.</p>
+                 <hr>
+        </div>
+         <!--6  -->
+            <div class="QuestionContainer1">
+            <div class="Q1" id="ques6">
+                <p>What if I already have an Amazon Prime Video subscription?</p>
+                <i class="fa fa-plus" ></i>
+            </div>
+            <p class="specialPara" id="specialPara6">Prime Video is included in Amazon Prime.
+                 If you are already a Prime Video subscriber in Egypt, you can cancel 
+                 your Prime Video subscription and sign up for Prime on Amazon.eg and 
+                 get 30 days free trial. Otherwise, 
+                you will be automatically migrated at the end of your billing cycle.</p>
+                 <hr>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <a href="#top">
+            <div class="backToTop">
+                Back to top
+            </div>
+        </a>
+        <div class="boutUs">
+            <div class="getTo">
+                <h3>Get to Know Us</h3>
+                <a href="#">About Amazon</a>
+                <a href="#">Careers</a>
+                <a href="#">Amazon Science</a>
+
+            </div>
+            <div class="getTo">
+                <h3>Shop with Us</h3>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Your Addresses</a>
+                <a href="#">Your Lists</a>
+
+            </div>
+            <div class="getTo">
+                <h3>Make Money with Us</h3>
+                <a href="#">Protect and build your brand</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Fulfillment by Amazon</a>
+
+
+            </div>
+            <div class="getTo">
+                <h3>Let Us Help You</h3>
+                <a href="#">Help</a>
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Returns & Replacements</a>
+                <a href="#">Amazon App Download</a>
+            </div>
+        </div>
+        <div class="myHr"></div>
+        <div class="foorerSetting">
+            <a href="#"><img src="/./Images/images/amaz.PNG" width="128px" /></a>
+            <div class="settin">
+                <a href="#"><img class="" src="./Images/images/internet.png" /><span> English</span></a>
+                <a href="#"><img class="" src="./Images/images/egypt.png" /><span> Egypt</span></a>
+            </div>
+        </div>
+        <div class="lastLinksinFooter">
+            <a href="#">
+                <span> Amazon Advertising</span><br>
+                Find, attract, and
+                engage customers</a>
+            <a href="#"><span> Sell on Amazon.ae</span><br>
+                Sell globally, start with UAE</a>
+            <a href="#"><span>Sell on Amazon.sa</span><br>
+                Sell globally, start with Saudi Arabia</a>
+            <a href="#"><span> Web Services</span><br>
+                Scalable Cloud
+                Computing Services</a>
+            <a href="#"><span>Goodreads</span><br>
+                Book reviews
+                & recommendations</a>
+
+        </div>
+        <div class="lastLinksinFooter">
+            <a href="#"><span>Audible</span><br>
+                Download
+                Audio Books</a>
+            <a href="#"><span>IMDb</span><br>
+                Movies, TV
+                & Celebrities</a>
+            <a href="#"><span>Alexa</span><br>
+                Actionable Analytics
+                for the Web</a>
+            <a href="#"><span>Book Depository</span><br>
+                Books With Free
+                Delivery Worldwide</a>
+            <a href="#"><span>Shopbop</span><br>
+                Designer
+                Fashion Brands</a>
+        </div>
+        <div class="privacyFooterSection">
+            <a href="#">Conditions of Use & Sale</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Interest-Based Ads</a>
+        </div>
+        <p class="copyRights">&#169 1996–2023, Amazon.com, Inc. or its affiliates</p>
+
+    </footer>
+    <!-- Slider Menu -->
+    <div class="sliderMenu" id="myMenu">
+        <div class="menuHead">
+            <img src="./Images/images/user (1).png" />
+            <span>Hello ,<span id="usernameLogin" >Sign In</span>
+
+            <img src="./Images/images/remove (1).png" class="closeMenu" id="closeMenu" />
+        </div>
+        <div class="menuContent">
+            <div class="trendingMenu">
+                <h4>Trending</h4>
+                <ul>
+                    <li><a href="#">Best Seller</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Mover & Shakers</a></li>
+
+                </ul>
+            </div>
+            <hr>
+            <div class="trendingMenu">
+                <h4>Digital Content And Devices</h4>
+                <ul>
+                    <li><a href="#">Amazon Kindle E-readers</a></li>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="trendingMenu">
+                <h4>Shop By Category</h4>
+                <ul>
+                    <li><a href="#">Mobiles, Tablets & Accessories</a></li>
+                    <li><a href="#">Computers & Office Supplies</a></li>
+                    <li><a href="#">TVs & Electronics</a></li>
+                    <li><a href="#">Women's Fashion</a></li>
+                    <li><a href="#">See All</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="trendingMenu">
+                <h4>Programs & Features</h4>
+                <ul>
+                    <li><a href="#">Today's Deals</a></li>
+                    <li><a href="#">Amazon Outlet</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="trendingMenu">
+                <h4>Help & Settings</h4>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#"><img class="" src="./Images/images/internet.png" /><span>English</span></a></li>
+                    <li><a href="#"><img class="" src="./Images/images/egypt.png" /><span>Egypt</span></a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="./Js/primeScript.js"></script>
+        <script src="./Js/indScript.js"></script>
+
+    </div>
+    <script src="./Js/indScript.js"></script>
+    <script src="./prime.html"></script>
+
+</body>
+
+</html>

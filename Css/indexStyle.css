@@ -1,0 +1,508 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    position: relative;
+}
+.header{
+    height: 60px;
+    padding: 0 1% 0 1%;
+    background-color: #141920;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.header:hover{
+    cursor: pointer;
+}
+.header .logo img:hover{
+    border: 1px white solid;
+    border-radius: 4px;
+}
+.header .logo , .header .location{
+    width: 100px;
+}
+.header .logo img{
+    width: 100px;
+}
+
+.header .location img{
+    width: 60px;
+}
+.header .location img:hover{
+    border: 1px white solid;
+    border-radius: 4px;
+}
+.header .searchTextBox{
+    border-radius: 4px;
+    overflow: hidden;
+    height: 40px;
+    width: 50%;
+    display: flex;
+}
+.header .searchTextBox:hover{
+    border: 3px #F4BF76 solid;
+}
+.header .searchTextBox select{
+    background-color: #DDDDDD;
+    color: black;
+    text-align: center;
+    flex: 1;
+    border: 0px;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+}
+.header .searchTextBox select option{
+    width: 500px;
+    background-color: #FFF;
+    color: black;
+    font-size: 14;
+    font-weight: 500;
+    text-align: left;
+}
+.header .searchTextBox input[type='text']{
+    flex: 10;
+    color: black;
+    font-size: 18px;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    padding:0 10px;
+}
+.header .searchTextBox .searchIcon{
+    flex: 1;
+    background-color: #F2A742;
+    display: flex;
+    align-items: center;
+    align-content: center;
+} 
+.header .searchTextBox .searchIcon img{
+    /* width: 25px; */
+    height: 24px;
+    margin: auto;
+    cursor: pointer;
+}
+.header .LanCount img{
+    width: 50px;
+    height: 40px;
+}
+.header .LanCount img{
+    width: 20px;
+    height: 20px;
+}
+
+.header .LanCount{
+    width: 4%;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .signIn , .header .ordersHead {
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.header .LanCount:hover , .header .signIn:hover , .header .ordersHead:hover , .header .cartHead:hover{
+    border: 1px white solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Navigation Bar Style */
+
+.navbar{
+    height: 40px;
+    width: 100%;
+    background-color:#252F3D ;
+}
+.navbar ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 15px 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li:hover{
+    border: 1px white solid;
+    border-radius: 4px;
+}
+.navbar ul li a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.navbar ul li a img{
+    width: 18px;
+    padding:0 5px;
+}
+
+/* Slider Menu */
+
+.sliderMenu{
+    transform: translateX(-350px);
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#FFF ;
+    color: black;
+    transition: 0.75s;
+}
+.sliderMenu .menuContent{
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x:scroll;
+}
+.sliderMenu .menuHead{
+    background-color: #252F3D;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sliderMenu .menuHead img{
+    margin: 0 10px 0 30px;
+}
+.sliderMenu .menuHead .closeMenu img{
+    margin-right: 0;
+    width: 25px;
+}
+
+/* Trending Section in Menu */
+.trendingMenu{
+    width: 100%;
+    /* background-color: #F2A742; */
+    align-items: center;
+    overflow: hidden;
+    padding: 30px 0 30px 0;
+}
+.trendingMenu h4{
+    color: black;
+    font-size: 19px;
+    padding-left: 60px;
+    padding-bottom: 12px;
+}
+.trendingMenu ul {
+    height: 90%;
+}
+.trendingMenu ul li{
+    list-style: none;
+    height: 100%;
+}
+.trendingMenu ul li img{
+    margin-right:6px ;
+}
+.trendingMenu ul li a span{
+    color:#565959 ;
+    text-align: center;
+}
+.trendingMenu ul li a{
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0px;
+    color: #565959;
+    text-decoration: none;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.trendingMenu ul li a:hover{
+    background-color: #C9CCCC;
+}
+
+/* Content Style */
+.content{
+    background-color: #FFF;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .productDiv{
+    width: 250px;
+    height: 500px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    background-color: #565959;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #565959;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.content .productDiv img{
+    width: 100%;
+    color: #141920;
+    margin: auto;
+    opacity: 0.8;
+    height: 60%;
+}
+.content .productDiv .productTexts{
+    width: 98%;
+    padding: 8px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.productTexts #prodDiscription , .productTexts p{
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+.productTexts h5 {
+    color:  #000;
+    font-size: 26px;
+    margin:8px 0 8px 0 ;
+    text-align: left;
+}
+.productTexts sup{
+    color: #000;
+    font-size: 12px;
+}
+
+/* Footer Style */
+footer{
+    height: 610px;
+    background-color: #141920;
+}
+footer .backToTop{
+    height: 50px;
+    background-color: #404e63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: 0.5s;
+}
+footer a{
+    text-decoration: none;
+}
+footer .backToTop:hover{
+    background-color: #485769;
+    letter-spacing: 1.2;
+}
+.boutUs{
+    margin: auto;
+    padding: 3% 15%;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.getTo h3{
+    font-weight: 600;
+    color: #FFF;
+    font-size: 16px;
+}
+.getTo a{
+    display: block;
+    color: #C9CCCC;
+    margin: 10px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+.getTo a:hover{
+    text-decoration: underline;
+    text-align: left;
+}
+.foorerSetting{
+    padding: 2% 30%;
+    height: 5%;
+    flex-direction: row;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.foorerSetting .settin a{
+    margin: 0 6px;
+    padding: 8px 12px;
+    color:#565959 ;
+    display: flex;
+    align-items: center;
+    border: 1px #C9CCCC solid;
+    border-radius: 4px;
+}
+.foorerSetting .settin a img{
+    padding-right: 10px;
+}
+.myHr{
+    background-color: #C9CCCC;
+    height: 1px;
+}
+.lastLinksinFooter{
+    
+    padding: 2% 12% 0 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lastLinksinFooter a{
+   font-size: 12px;
+   color:  #C9CCCC;
+   flex: 1;
+   padding: 10px;
+}
+.lastLinksinFooter a span{
+    color: #FFF;
+    font-weight: 600;   
+}
+.lastLinksinFooter a:hover{
+    text-decoration: underline;
+    letter-spacing: 1.1;
+}
+.privacyFooterSection{
+    margin: auto;
+    width: 35%;
+    padding:25px 0 4px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.privacyFooterSection a{
+    font-size: 12px;
+    color:  #C9CCCC;
+    font-weight: bold;
+}
+.privacyFooterSection a:hover{
+    text-decoration: underline;
+}
+.copyRights{
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color:  #C9CCCC;
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    left: 77%;
+    top:10px ;
+    width: 20%; /* Full width */
+    height: 10%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); /* Fallback color */
+    /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+     
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color:#19283f;
+    display: flex;
+    /* background-color: #fefefe; */
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 80%;
+    right: 0px;
+    top:0;
+  }
+.modal-content a{
+    padding: 10px;
+  
+}
+.close{
+   top:0;
+   right:-30px;
+
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .content{
+    background-color: #FFF;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .productDiv{
+    width: 250px;
+    height: 500px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    background-color: #565959;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #565959;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.content .productDiv a{
+    width: 100%;
+    height: 60%;
+}
+.content .productDiv  img{
+    width: 100%;
+    height: 100%;
+    color: #141920;
+    margin: auto;
+    opacity: 0.8;
+}
+.content .productDiv .productTexts{
+    width: 98%;
+    padding: 8px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.productTexts #prodDiscription , .productTexts p{
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+.productTexts h5 {
+    color:  #000;
+    font-size: 26px;
+    margin:8px 0 8px 0 ;
+    text-align: left;
+}
+.productTexts sup{
+    color: #000;
+    font-size: 12px;
+}

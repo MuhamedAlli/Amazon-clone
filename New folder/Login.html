@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Sign In</title>
+  <link rel="icon" type="image/x-icon" href="./Images/media/amazonicon1.png">
+  <link rel="stylesheet" href="./Css/stylelogin.css">
+  <!-- <link rel="" href="script.js"> -->
+</head>
+
+<body>
+  <div class="amazonIcon">
+    <!-- <a  href="https://www.amazon.eg/"> -->
+    <a  href="#">
+
+      <img src="./Images/media/amazon icon.jpg" alt="amazon icon">
+    </a>
+  </div>
+  <div hidden>
+    <div class="warnContainer">
+      <div class="warnImage">
+        <img src="./Images/media/warn.png" alt="">
+      </div>
+      <div class="warnText">
+        <h1>There was a problem</h1>
+        <p>We cannot find an account with that email address</p>
+      </div>
+    </div>
+  </div>
+  <div id="signInBorder">
+    <p id="SignInTxt">
+      Sign in
+    </p>
+    <form action="./Password.html">
+      <label>
+        <strong>Email or mobile phone number
+        </strong>
+      </label>
+      <br>
+      <input type="text" name="email" id="checkEmailOrPhone" value=""> <!--autofocus>-->
+      <span class="MessageReuired"><em><b>!</b></em>Enter your email or mobile phone number.</span>
+      <br>
+      <div>
+        <div>
+    
+          <button type="submit" id="amazon">continue</button>
+    
+        </div>
+    
+  
+      <p class="terms">By signing in, you agree to Amazon's<a href="conditions.html">Conditions of Use</a>and<a
+          href="privacy.html">Privacy Notice</a>.</p>
+
+      <div class="dropdown" id="needHelp">
+        <a href="" class="dropbtn"></a>Need help?</a>
+        <div class="dropdown-content" id="dropBtnContent">
+          <a href="#">Forgot your password?</a>
+          <a href="#">Other issues with Sign-In</a>
+
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <div id="createAccount">
+    <div class="newToamazon">
+      <h2><span>New to Amazon?</span></h2>
+    </div>
+    <div class="createYouraccount">
+      <!-- <button id="newAccount" name="newAcct">Create your Amazon account</button> -->
+      <a href="./Registration.html">
+      <input type="button" href="./Registration.html" id="newAccount" value="Create your Amazon account">
+        
+      </a>
+      <!-- <input type="button" href="./Registration.html" id="newAccount" value="Create your Amazon account"> -->
+    </div>
+  </div>
+
+
+  <hr id="footer">
+
+  <div class="extra">
+    <p class="links"><a href="#" id="first">Conditions of Use</a>
+      <a href="#">Privacy of Use</a>
+      <a href="#">Help</a>
+    </p>
+    <p class="links" id="special">
+      © 1996-2016, Amazon.com, Inc. or its affiliates
+    </p>
+  </div>
+
+  <script src="./Js/loginscript.js"></script>
+</body>
+
+</html>
